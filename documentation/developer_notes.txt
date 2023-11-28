@@ -1,0 +1,18 @@
+{
+
+CHAT SECTION:
+
+[Manoj] - [28-11-23 2127Hrs]
+-> Set Up our fun SPM / Game project
+
+}
+
+
+{
+
+CHANGE LOG:
+
+1. Set Up View-engine and basic express app
+    -> Using nunjucks as view engine - a jinja2 inspired view engine for node.js (very fluid).
+
+}

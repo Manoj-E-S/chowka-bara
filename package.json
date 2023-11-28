@@ -1,0 +1,29 @@
+{
+  "name": "chowka-bara",
+  "version": "1.0.0",
+  "description": "The classic Indian board game, reinvented as a web-game. Play with your friends and NRI-cousins online, relive your childhood.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon server.js"
+  },
+  "keywords": [
+    "Game",
+    "BoardGame",
+    "Web-game",
+    "multiplayer",
+    "IndianGame"
+  ],
+  "author": "Manoj E S",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nunjucks": "^3.2.4",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
