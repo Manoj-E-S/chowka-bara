@@ -8,6 +8,9 @@ CHAT SECTION:
 [Ian] - [28-11-23 2208Hrs]
 -> Nice, just doing this to confirm I can push!
 
+[Ian] - [30-11-23 1537Hrs]
+-> Setup Angular and Typescript for the server side as well. Read README.md for more info on how to get everything up and running.
+
 }
 
 
@@ -15,7 +18,7 @@ CHAT SECTION:
 
 CHANGE LOG:
 
-1. Set Up View-engine and basic express app
-    -> Using nunjucks as view engine - a jinja2 inspired view engine for node.js (very fluid).
+1. Set Up using Typescript for the serverside, to be more fluid with Angular.
+	-> Scripts for building and running server in both production and dev mode added.
 
 }
