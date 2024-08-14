@@ -1,0 +1,24 @@
+<svg class="svg-parent" [ngClass]="pos==='left'? 'left-3' : 'right-3'">
+    <line class="rangoli-line" x1="10%" y1="0" x2="10%" y2="100%"/>
+    <line class="rangoli-line" x1="20%" y1="0" x2="20%" y2="100%"/>
+    @for (num of [].constructor(19); track $index) {
+        <path 
+            class="rangoli-curve"
+            attr.d="
+                M{{X1}},{{startY + $index*endY}}
+                A30,30 0 0,1 {{X1}},{{endY + $index*endY}}
+            "
+        />
+        <path 
+            class="rangoli-curve"
+            attr.d="
+                M{{X2}},{{startY + $index*endY}}
+                A30,30 0 0,0 {{X2}},{{endY + $index*endY}}
+            "
+        />
+        <circle class="rangoli-dot" cx="50%" attr.cy="{{startY + $index*endY + endY/2}}" r="4px"/>
+        <circle class="rangoli-dot" cx="50%" attr.cy="{{startY + $index*endY + endY/2}}" r="4px"/>
+    }
+    <line class="rangoli-line" x1="80%" y1="0" x2="80%" y2="100%"/>
+    <line class="rangoli-line" x1="90%" y1="0" x2="90%" y2="100%"/>
+</svg>

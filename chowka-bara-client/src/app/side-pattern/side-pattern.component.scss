@@ -1,0 +1,21 @@
+.svg-parent {
+    width:75.28px; 
+    height:100svh;
+    @apply fixed;
+}
+
+.rangoli-line {
+    stroke: var(--rangoli-white);
+    stroke-width: 3px;
+}
+
+.rangoli-curve {
+    fill: none;
+    stroke: var(--rangoli-white);
+    stroke-width: 4px;
+}
+
+.rangoli-dot {
+    fill: var(--rangoli-white);
+    stroke: none;
+}

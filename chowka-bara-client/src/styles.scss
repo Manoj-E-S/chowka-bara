@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --indian-red: #9c451b;
+    --indian-green: #394f3d;
+    --rangoli-white: #ebd6b4;
+    --indian-black: #091433;
+    --indian-maroon: #561118;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--indian-maroon);
+}
