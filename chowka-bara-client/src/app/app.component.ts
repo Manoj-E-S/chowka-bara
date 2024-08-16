@@ -5,11 +5,12 @@ import { RouterOutlet } from '@angular/router';
 import { AnimatedSidePatternComponent } from './animated-side-pattern/animated-side-pattern.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { JoinRoomComponent } from './join-room/join-room.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, AnimatedSidePatternComponent, HeaderComponent, FooterComponent],
+  imports: [CommonModule, RouterOutlet, AnimatedSidePatternComponent, HeaderComponent, FooterComponent, JoinRoomComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

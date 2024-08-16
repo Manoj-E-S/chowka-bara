@@ -11,5 +11,7 @@ import { RangoliLineComponent } from '../rangoli-line/rangoli-line.component';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  showRules() {
+    alert("'How to play?' not yet Implemented");
+  }
 }

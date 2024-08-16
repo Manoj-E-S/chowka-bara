@@ -1,0 +1,38 @@
+#joinRoomFormContainer {
+    @apply flex flex-col items-center justify-center;
+    @apply text-white text-2xl;
+    @apply min-h-[60svh] h-auto;
+    font-family: 'Philosopher';
+}
+
+#joinRoomForm {
+    @apply flex flex-col items-center justify-center;
+    @apply w-auto;
+    background-color: var(--indian-green);
+
+    & > h1 {
+        @apply text-3xl;
+        @apply py-4;
+    }
+}
+
+#joinRoomFormSubmit {
+    @apply px-10 py-5 m-2 mb-4 rounded-sm;
+    background-color: var(--indian-black);
+}
+
+.form-item {
+    @apply flex flex-col items-center justify-center;
+    @apply p-2 m-2;
+
+    & > label {
+        @apply w-full p-1;
+        @apply text-left text-xl;
+    }
+
+    & > input {
+        @apply rounded-sm p-2;
+        color: var(--indian-black);
+        background-color: var(--rangoli-white);
+    }
+}

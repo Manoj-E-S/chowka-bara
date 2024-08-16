@@ -1,15 +1,25 @@
+#chowka {
+    @apply mb-6;
+    @apply drop-shadow-lg;
+}
+
+#bara {
+    @apply mt-6;
+    @apply drop-shadow-lg;
+}
+
 .title-header {
-    @apply flex;
-    @apply flex-col;
-    @apply items-center;
-    @apply justify-center;
-    @apply text-white;
-    @apply mx-auto;
-    @apply py-5;
-    @apply w-full;
-    @apply text-5xl;
-    @apply relative;
-    @apply z-10;
+    @apply flex flex-row items-center justify-center;
+    @apply mx-auto py-5 w-full;
+    @apply text-white text-5xl md:text-6xl;
+    @apply relative z-10;
     background-color: var(--indian-green);
     font-family: 'Caveat';
+}
+
+.cowrie-img {
+    @apply h-20 md:h-24;
+    @apply w-20 md:w-24;
+    @apply mx-4 md:mx-6;
+    @apply drop-shadow-lg;
 }

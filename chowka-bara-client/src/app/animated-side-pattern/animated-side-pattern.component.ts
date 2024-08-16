@@ -27,7 +27,7 @@ export class AnimatedSidePatternComponent implements OnInit {
     }
   }
 
-  cssAnimationDelay_rollup_rolldown: number = 15000;
+  cssAnimationDelay_rollup_rolldown: number = 10000;
   startAnimation_rollup_rolldown() {
     setInterval(() => {
       this.rotatePatterns();

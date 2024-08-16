@@ -15,3 +15,7 @@
     background-color: var(--indian-green);
     font-family: 'Courier Prime';
 }
+
+.rules-btn {
+    @apply underline underline-offset-4;
+}
