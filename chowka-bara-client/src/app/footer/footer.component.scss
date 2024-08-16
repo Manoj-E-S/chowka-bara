@@ -1,0 +1,17 @@
+.fix-bottom {
+    @apply fixed;
+    @apply bottom-0;
+    @apply w-full;
+}
+
+.rules-footer {
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply text-white;
+    @apply py-3;
+    @apply text-2xl;
+    background-color: var(--indian-green);
+    font-family: 'Courier Prime';
+}

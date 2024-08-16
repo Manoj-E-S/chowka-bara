@@ -1,7 +1,6 @@
-.svg-parent {
-    width:75.28px; 
-    height:100svh;
-    @apply fixed;
+.w\&h {
+    width: 75.28px; 
+    height: 97svh;
 }
 
 .rangoli-line {
@@ -18,4 +17,30 @@
 .rangoli-dot {
     fill: var(--rangoli-white);
     stroke: none;
+}
+
+.animation-rollup {
+    animation: rollup 15s linear 0s infinite;
+}
+
+.animation-rolldown {
+    animation: rolldown 15s linear 0s infinite;
+}
+
+@keyframes rolldown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes rollup {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
 }

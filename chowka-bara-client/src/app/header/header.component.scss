@@ -1,0 +1,15 @@
+.title-header {
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply justify-center;
+    @apply text-white;
+    @apply mx-auto;
+    @apply py-5;
+    @apply w-full;
+    @apply text-5xl;
+    @apply relative;
+    @apply z-10;
+    background-color: var(--indian-green);
+    font-family: 'Caveat';
+}

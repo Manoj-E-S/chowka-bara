@@ -9,7 +9,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './side-pattern.component.scss'
 })
 export class SidePatternComponent {
-  @Input() pos: string = 'left';
+  @Input() pos: string = '';
+  @Input() rollup: boolean = false;
+  @Input() rolldown: boolean = false;
   
   X1: number = 36.5;
   X2: number = 38.5;
