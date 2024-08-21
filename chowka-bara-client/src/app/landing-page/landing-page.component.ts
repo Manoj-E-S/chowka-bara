@@ -7,12 +7,16 @@ import { FooterComponent } from '../footer/footer.component';
 import { JoinRoomComponent } from '../join-room/join-room.component';
 
 @Component({
-  selector: 'app-landing-page',
-  standalone: true,
-  imports: [CommonModule, AnimatedSidePatternComponent, HeaderComponent, FooterComponent, JoinRoomComponent],
-  templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.scss'
+    selector: 'app-landing-page',
+    standalone: true,
+    imports: [
+        CommonModule,
+        AnimatedSidePatternComponent,
+        HeaderComponent,
+        FooterComponent,
+        JoinRoomComponent,
+    ],
+    templateUrl: './landing-page.component.html',
+    styleUrl: './landing-page.component.scss',
 })
-export class LandingPageComponent {
-
-}
+export class LandingPageComponent {}

@@ -5,5 +5,9 @@ export const routes: Routes = [
     {
         path: '',
         component: LandingPageComponent,
-    }
+    },
+    {
+        path: '**',
+        component: LandingPageComponent,
+    },
 ];

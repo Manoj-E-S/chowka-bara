@@ -1,5 +1,13 @@
-<div id="sidePatternContainer" class="fix-top" [class]="pos==='' ? '' : (pos==='right' ? 'right-3': 'left-3')">
-    @for(pattern of patterns; track pattern) {
-        <side-pattern id="pattern{{pattern}}" [rollup]="rollup" [rolldown]="rolldown"></side-pattern>
+<div
+    id="sidePatternContainer"
+    class="fix-top"
+    [class]="pos === '' ? '' : pos === 'right' ? 'right-3' : 'left-3'"
+>
+    @for (pattern of patterns; track pattern) {
+        <side-pattern
+            id="pattern{{ pattern }}"
+            [rollup]="rollup"
+            [rolldown]="rolldown"
+        ></side-pattern>
     }
 </div>
