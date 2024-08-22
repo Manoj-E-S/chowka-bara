@@ -1,35 +1,33 @@
 // Imports
 import express from "express";
-import * as http from "http";
-import * as socketio from "socket.io";
-
 import bodyParser from "body-parser";
 import * as dotenv from "dotenv";
+import path from "path";
 
 dotenv.config();
 
 
 // Make a .env file (since it is in .gitignore) at the root of the working directory and include PORT number of your choice in it.
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 2529;
 
 
 // Server Setup
 const app = express();
-const socket_server = http.createServer(app);
-const io = new socketio.Server(socket_server);
 
 
 // Middleware
+app.use('/', express.static(path.join(__dirname, '../../chowka-bara-client/dist/chowka-bara-client/browser')));
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-// GET routes
-app.get('/', (req, res) => {
-    res.send("Server Running!");
+// Serve index.html on hitting any endpoint, and let angular do the rest of the routing
+app.get('/*', (req, res) => {
+    res.sendFile('/index.html');
 });
 
 
-// Run Server using the http socket server created.
-socket_server.listen(PORT, () => {
+// Run Server using the Express app created.
+app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
