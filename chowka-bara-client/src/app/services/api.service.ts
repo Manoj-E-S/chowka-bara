@@ -8,11 +8,32 @@ import { Observable } from 'rxjs';
     providedIn: 'root',
 })
 export class ApiService {
-    protected http: HttpClient = inject(HttpClient);
-    protected apiUrl: string = environment.apiUrl;
-    protected defaultOptions: any = {
+    private http: HttpClient = inject(HttpClient);
+    private apiUrl: string = environment.apiUrl;
+    private defaultOptions: any = {
         observe: 'response',
         withCredentials: true,
     };
 
+    private combineOptions(userOptions : any) : any {
+        return { ...this.defaultOptions, ...userOptions };
+    }
+
+    protected Get(endpoint : string, userOptions : any) : Observable<ArrayBuffer> {
+        return this.http.get(this.apiUrl + endpoint, this.combineOptions(userOptions));
+    }
+
+    protected Post(endpoint : string, requestBody : any, userOptions : any) : Observable<ArrayBuffer> {
+        return this.http.post(this.apiUrl + endpoint, requestBody, this.combineOptions(userOptions));
+    }
+
+    protected Put(endpoint : string, requestBody : any, userOptions : any) : Observable<ArrayBuffer> {
+        return this.http.put(this.apiUrl + endpoint, requestBody, this.combineOptions(userOptions));
+    }
+
+    protected Delete(endpoint : string, userOptions : any) : Observable<ArrayBuffer> {
+        return this.http.delete(this.apiUrl + endpoint, this.combineOptions(userOptions));
+    }
+
+    // Add further HTTP Methods if required
 }
