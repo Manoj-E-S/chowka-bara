@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RangoliLineComponent } from '../rangoli-line/rangoli-line.component';
+import { RangoliLineComponent } from '../../../../generic-components/rangoli-line/rangoli-line.component';
 
 @Component({
     selector: 'join-room',

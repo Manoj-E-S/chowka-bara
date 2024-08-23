@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AnimatedSidePatternComponent } from '../animated-side-pattern/animated-side-pattern.component';
-import { HeaderComponent } from '../header/header.component';
-import { FooterComponent } from '../footer/footer.component';
-import { JoinRoomComponent } from '../join-room/join-room.component';
+import { AnimatedSidePatternComponent } from '../../generic-components/animated-side-pattern/animated-side-pattern.component';
+import { HeaderComponent } from '../../generic-components/header/header.component';
+import { FooterComponent } from '../../generic-components/footer/footer.component';
+import { JoinRoomComponent } from './components/join-room/join-room.component';
 
 @Component({
     selector: 'app-landing-page',
