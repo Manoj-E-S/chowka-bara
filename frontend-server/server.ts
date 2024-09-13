@@ -22,8 +22,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 // Serve index.html on hitting any endpoint, and let angular do the rest of the routing
-app.get('/*', (req, res) => {
-    res.sendFile('/index.html');
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../../chowka-bara-client/dist/chowka-bara-client/browser/index.html'));
 });
 
 

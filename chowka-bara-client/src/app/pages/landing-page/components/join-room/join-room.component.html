@@ -1,14 +1,14 @@
 <div id="joinRoomFormContainer">
-    <form action="#" method="POST" id="joinRoomForm">
+    <form action="#" method="" id="joinRoomForm" (ngSubmit)="joinRoomFormOnSubmit($event)"> 
         <rangoli-line></rangoli-line>
         <h1>Join a Party</h1>
         <div class="form-item">
             <label for="username">Player Name</label>
-            <input type="text" name="username" id="username" />
+            <input type="text" name="username" id="username" [(ngModel)]="username"/>
         </div>
         <div class="form-item">
             <label for="privatePartyKey">Private-Party Key</label>
-            <input type="text" name="privatePartyKey" id="privatePartyKey" />
+            <input type="text" name="privatePartyKey" id="privatePartyKey" [(ngModel)]="privatePartyKey" />
         </div>
         <input id="joinRoomFormSubmit" type="submit" value="Join" />
         <rangoli-line></rangoli-line>

@@ -1,10 +1,10 @@
-package com.chowkabara.api.controller;
+package com.chowkabara.api.checkServer;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController("/")
-public class RootController {
+public class CheckServerController {
 
 	@GetMapping("/")
 	public String index() {
